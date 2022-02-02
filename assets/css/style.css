@@ -7,10 +7,13 @@
 }
 .header ul{
 	display:inline-block;
-	padding:25px 15px 15px 15px;
+	
+	
 }
 .header ul li{
 	display:inline-block;
+	padding:25px 10px 15px;
+
 }
 .header ul li a {
 	font-size:18px;
@@ -27,11 +30,11 @@
 	color:#69be28;
 	
 }
-.navbar li{
+.navbar li {
 	position:relative;
 	cursor:pointer;
 }
-.navbar li::before{
+.navbar li a::before{
 	content: '';
 	
 	background-color:#69be28;
@@ -40,9 +43,9 @@
 	left:0;
 	bottom:0;
 	position:absolute;
-	transition:0.5s all ease-in-out;
+	transition:0.3s all ease-in-out;
 }
-.navbar li:hover::before{
+.navbar li a:hover::before{
 	width:100%;
 }
 .btn-register{
@@ -51,9 +54,9 @@
 	border:2px solid #69be28;
 	outline:none;
 	text-transform:uppercase;
-	padding:18px;
+	padding:16px 17px;
 	position:absolute;
-	top: 30px;
+	top: 34px;
     right: 190px;
 	cursor:pointer;
 	font-family: 'Open Sans', sans-serif;
@@ -72,8 +75,8 @@
 	width:100%;
 	background-repeat:no-repeat;
 	background-position:fixed;
-	background-size:cover;
-	background-attachment:center;
+	background-size:100% 100%;
+	/* background-attachment:center; */
 }
 .box{
 	position: absolute;
@@ -86,9 +89,11 @@
 	color:#fff;
 	font-weight:bold;
 	text-transform:uppercase;
-	margin-bottom:30px;
-	text-decoration:underline;
+	margin-bottom:25px;
+	/* text-decoration:underline; */
 	font-family: 'Open Sans', sans-serif;
+	border-bottom:2px solid #fff;
+	padding-bottom:30px;
 }
 .sec-info{
 	color:#fff;
@@ -198,8 +203,8 @@
 .footer ul li a{
 	color:#fff;
 	border:2px solid #fff;
-	border-radius:50%;
-	padding:5px;
+	border-radius:50px;
+	padding:5px 10px;
 	margin-top:15px;
 	font-size:18px;
 }
